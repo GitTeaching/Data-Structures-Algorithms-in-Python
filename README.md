@@ -7,3 +7,6 @@ Data structures:
  - Queues
  - Stacks
  - Trees and Binary trees
+
+Algorithms:
+ - Tower of Hanoi
