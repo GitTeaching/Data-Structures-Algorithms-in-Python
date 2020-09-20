@@ -10,3 +10,6 @@ Data structures:
 
 Algorithms:
  - Tower of Hanoi
+ - Bubble Sort
+ - Selection Sort
+ - Insertion Sort
