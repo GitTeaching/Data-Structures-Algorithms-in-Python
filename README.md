@@ -14,3 +14,4 @@ Algorithms:
  - Selection Sort
  - Insertion Sort
  - Merge Sort
+ - Quick Sort
