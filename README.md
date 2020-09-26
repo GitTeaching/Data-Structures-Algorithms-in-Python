@@ -16,3 +16,4 @@ Algorithms:
  - Merge Sort
  - Quick Sort
  - Shell Sort
+ - Counting Sort
