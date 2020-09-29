@@ -27,3 +27,4 @@ Algorithms:
  - Quick Sort
  - Shell Sort
  - Counting Sort
+ - Radix Sort
