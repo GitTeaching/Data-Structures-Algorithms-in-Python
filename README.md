@@ -2,11 +2,11 @@
 
 Implementing Data Structures and Algorithms in Python.
 
-Recursive functions
+#### Recursive functions
 
-Algorithm analysis and complexity
+##### Algorithm analysis and complexity
 
-Data structures:
+#### Data structures:
  - Built-in (List, Dicts, Tuples, Sets, Strings, etc.)
  - Linked Lists (Singly, Doubly, Circular)
  - Queues
@@ -18,7 +18,7 @@ Data structures:
  - Priority Queues
  - Graphs
 
-Algorithms:
+#### Algorithms:
  - Tower of Hanoi
  - Bubble Sort
  - Selection Sort
@@ -28,3 +28,4 @@ Algorithms:
  - Shell Sort
  - Counting Sort
  - Radix Sort
+ 
