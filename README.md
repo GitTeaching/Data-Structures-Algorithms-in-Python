@@ -28,4 +28,5 @@ Implementing Data Structures and Algorithms in Python.
  - Shell Sort
  - Counting Sort
  - Radix Sort
+ - Bucket Sort
  
