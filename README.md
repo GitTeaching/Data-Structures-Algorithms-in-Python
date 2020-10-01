@@ -4,7 +4,7 @@ Implementing Data Structures and Algorithms in Python.
 
 #### Recursive functions
 
-##### Algorithm analysis and complexity
+#### Algorithm analysis and complexity
 
 #### Data structures:
  - Built-in (List, Dicts, Tuples, Sets, Strings, etc.)
