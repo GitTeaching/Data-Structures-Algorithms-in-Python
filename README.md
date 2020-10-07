@@ -20,7 +20,7 @@ Implementing Data Structures and Algorithms in Python.
 
 #### 4- Algorithms:
  - Tower of Hanoi
- 
+ ---------
  - Bubble Sort
  - Selection Sort
  - Insertion Sort
@@ -31,4 +31,7 @@ Implementing Data Structures and Algorithms in Python.
  - Radix Sort
  - Bucket Sort
  - Heap Sort
+ ---------
+ - Linear Search (Iterative and Recursive)
+ - Binary Search (Iterative and Recursive)
  
