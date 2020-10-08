@@ -12,7 +12,7 @@ Implementing Data Structures and Algorithms in Python.
  - Queues
  - Dequeues
  - Stacks
- - Trees and Binary trees BST
+ - Trees, Binary trees, BST
  - B Tree, AVL, Red-Black
  - Heaps
  - Priority Queues
