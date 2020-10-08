@@ -1,6 +1,6 @@
 # Data-Structures-Algorithms-in-Python
 
-Implementing Data Structures and Algorithms in Python.
+DSA in Python learning path - Implementing Data Structures and Algorithms in Python.
 
 #### 1- Recursion & Recursive functions
 
