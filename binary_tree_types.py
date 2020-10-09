@@ -3,11 +3,13 @@ Binary tree types :
 
 Full Binary tree : is a special type of binary tree in which every parent node/internal node has either two or no children.
 
-A perfect binary tree is a type of binary tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.
+Perfect binary tree : is a type of binary tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.
 
-A complete binary tree is a binary tree in which all the levels are completely filled except possibly the lowest one, which is filled from the left.
-A complete binary tree is a binary tree whose all levels except the last level are completely filled and all the leaves in the last level are all to the left side.
+Complete binary tree is a binary tree in which all the levels are completely filled except possibly the lowest one, which is filled from the left.
+Complete binary tree is a binary tree whose all levels except the last level are completely filled and all the leaves in the last level are all to the left side.
 
+Balanced binary tree, also referred to as a height-balanced binary tree, is defined as a binary tree in which the height of 
+the left and right subtree of any node differ by not more than 1.
 """
 
 
@@ -19,6 +21,7 @@ class Node:
 		self.right = None
 
 
+# ----------------------------------------------------------------------------------------------------
 # Checking if tree is Full Binary Tree
 def is_full_tree(root):
 	if root is None:
@@ -32,7 +35,7 @@ def is_full_tree(root):
 
 	return False
 
-
+# ----------------------------------------------------------------------------------------------------
 # Checking if a tree is Perfect Binary Tree
 def get_depth(node):
 	depth = 0
@@ -53,8 +56,8 @@ def is_perfect_tree(root, depth, level):
 
 	return is_perfect_tree(root.left, depth, level+1) and is_perfect_tree(root.right, depth, level+1)
 
-
-# Checking if a tree is Perfect Binary Tree
+# ----------------------------------------------------------------------------------------------------
+# Checking if a tree is Complete Binary Tree
 def count_nodes(root):
 	count = 0
 	if root is None:
@@ -70,7 +73,29 @@ def is_complete_tree(root, index, nbr_nodes):
 
 	return (is_complete_tree(root.left, 2*index+1, nbr_nodes) and is_complete_tree(root.right, 2*index+2, nbr_nodes))
 
+# ----------------------------------------------------------------------------------------------------
+# Checking if a tree is Balanced Binary Tree
+class CalculateHeight:
+    def __init__(self):
+        self.height = 0
 
+def is_balanced_tree(root, height_obj):
+    left_height = CalculateHeight()
+    right_height = CalculateHeight()
+
+    if root is None:
+        return True
+
+    l = is_balanced_tree(root.left, left_height)
+    r = is_balanced_tree(root.right, right_height)
+
+    height_obj.height = max(left_height.height, right_height.height) + 1
+
+    if abs(left_height.height - right_height.height) <= 1:
+        return l and r
+
+    return False
+# ----------------------------------------------------------------------------------------------------
 def main():
 	root = Node(1)
 	root.left = Node(12)
@@ -92,6 +117,11 @@ def main():
 		print("The tree is a complete binary tree")
 	else:
 		print("The tree is not a complete binary full")
+
+	if is_balanced_tree(root, CalculateHeight()):
+		print("The tree is a balanced binary tree")
+	else:
+		print("The tree is not a balanced binary full")
 
 
 if __name__ == '__main__':
