@@ -34,3 +34,5 @@ DSA in Python learning path - Implementing Data Structures and Algorithms in Pyt
  - Binary Search (Iterative and Recursive)
  
 #### 5- Greedy Algorithms
+
+#### 6- Dynamic Programming
