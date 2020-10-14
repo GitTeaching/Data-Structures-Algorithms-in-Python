@@ -38,3 +38,5 @@ DSA in Python learning path - Implementing Data Structures and Algorithms in Pyt
 #### 6- Dynamic Programming
 
 #### 7- Other Algorithms
+
+#### 8- Bit Manipulation
