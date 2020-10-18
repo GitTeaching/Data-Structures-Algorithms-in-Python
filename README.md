@@ -12,7 +12,7 @@ DSA in Python learning path - Implementing Data Structures and Algorithms in Pyt
  - Queues
  - Dequeues
  - Stacks
- - Trees, Binary trees, BST
+ - Trees, Binary trees, Binary Search Trees
  - B Tree, AVL, Red-Black
  - Heaps
  - Priority Queues
