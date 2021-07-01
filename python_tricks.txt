@@ -1,0 +1,10 @@
+Tricks : from Python Tricks - by Dan Bader 
+
+Reference :
+
+[Python Tricks]: Bader, Dan, ed. (2017) Python Tricks: The Book — A Buffet of Awesome Python Features. 1st ed. Warsaw: Amazon
+
+2.1 - Key Takeaways : Covering Your A** With Assertions
+• Python’s assert statement is a debugging aid that tests a condition as an internal self-check in your program.
+• Asserts should only be used to help developers identify bugs. They’re not a mechanism for handling run-time errors.
+• Asserts can be globally disabled with an interpreter setting.
