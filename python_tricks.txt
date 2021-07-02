@@ -8,3 +8,7 @@ Reference :
 • Python’s assert statement is a debugging aid that tests a condition as an internal self-check in your program.
 • Asserts should only be used to help developers identify bugs. They’re not a mechanism for handling run-time errors.
 • Asserts can be globally disabled with an interpreter setting.
+
+2.2 - Key Takeaways : Complacent Comma Placement
+• Smart formatting and comma placement can make your list, dict, or set constants easier to maintain.
+• Python’s string literal concatenation feature can work to your benefit, or introduce hard-to-catch bugs.
