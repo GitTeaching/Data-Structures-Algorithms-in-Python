@@ -10,6 +10,21 @@ def binarySearchRecursive(mylist, target, low, high):
 		else:
 			return binarySearchRecursive(mylist, target, mid+1, high)
 
+
+def recursive_binary_search(lst, value):
+    if not lst:
+        return False
+    else:
+        middle = len(lst) // 2
+        if lst[middle] == value:
+            return True
+        else:
+            if lst[middle] < value:
+                return recursive_binary_search(lst[middle+1:], value)
+            else:
+                return recursive_binary_search(lst[:middle], value)
+	
+		
 def binarySearch(mylist, target):
 	low = 0
 	high = len(mylist) - 1
