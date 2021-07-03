@@ -3,7 +3,7 @@ Tricks : from Python Tricks - by Dan Bader
 Reference :
   - [Python Tricks]: Bader, Dan, ed. (2017) Python Tricks: The Book — A Buffet of Awesome Python Features. 1st ed. Warsaw: Amazon
 
-Chapter 1 :
+<strong>Chapter 1 :</strong>
 
 [2.1] - Key Takeaways : Covering Your A** With Assertions
 • Python’s assert statement is a debugging aid that tests a condition as an internal self-check in your program.
@@ -13,3 +13,10 @@ Chapter 1 :
 [2.2] - Key Takeaways : Complacent Comma Placement
 • Smart formatting and comma placement can make your list, dict, or set constants easier to maintain.
 • Python’s string literal concatenation feature can work to your benefit, or introduce hard-to-catch bugs.
+
+[2.3] - Key Takeaways : Context Managers and the with Statement
+• The with statement simplifies exception handling by encapsulating standard uses of try/finally statements in so-called context managers.
+• Most commonly it is used to manage the safe acquisition and release of system resources. Resources are acquired by the with statement and released automatically when execution
+leaves the with context.
+• Using with effectively can help you avoid resource leaks and make your code easier to read.
+• Class-based contexte manager : Python calls __enter__ when execution enters the context of the with statement and it’s time to acquire the resource. When execution leaves the context again, Python calls __exit__ to free up the resource. Or : The contextlib7 utility module.
