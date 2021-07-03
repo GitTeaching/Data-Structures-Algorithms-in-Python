@@ -13,23 +13,22 @@ def binarySearchRecursive(mylist, target, low, high):
 def binarySearch(mylist, target):
 	low = 0
 	high = len(mylist) - 1
-	mid = 0
+	
 	while low <= high:
 		mid = (low + high) // 2
 		if mylist[mid] == target:
 			return True
-			#return mid to return its index
 		elif target < mylist[mid]:
 			high = mid - 1
 		else:
 			low = mid + 1
-	return False
+	return 
 
 def linearSearch(mylist, target):
 	for i in mylist:
 		if target == mylist[i]:
 			return True
-	return False
+	return 
 
 def linearSearchRecursive(mylist, i, target):
 	if i > len(mylist)-1:
