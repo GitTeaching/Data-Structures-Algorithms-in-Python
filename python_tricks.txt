@@ -1,4 +1,4 @@
-Tricks : from Python Tricks - by Dan Bader 
+Key Takeaways : from Python Tricks - by Dan Bader 
 
 Reference :
   - [Python Tricks]: Bader, Dan, ed. (2017) Python Tricks: The Book — A Buffet of Awesome Python Features. 1st ed. Warsaw: Amazon
@@ -20,3 +20,11 @@ Chapter 1 :
 leaves the with context.
 • Using with effectively can help you avoid resource leaks and make your code easier to read.
 • Class-based contexte manager : Python calls __enter__ when execution enters the context of the with statement and it’s time to acquire the resource. When execution leaves the context again, Python calls __exit__ to free up the resource. Or : The contextlib7 utility module.
+
+[2.4] - Key Takeaways : Underscores, Dunders, and More
+• Single Leading Underscore “_var”: Naming convention indicating a name is meant for internal use. Generally not enforced by the Python interpreter (except in wildcard imports)
+and meant as a hint to the programmer only.
+• Single Trailing Underscore “var_”: Used by convention to avoid naming conflicts with Python keywords.
+• Double Leading Underscore “__var”: Triggers name mangling when used in a class context. Enforced by the Python interpreter.
+• Double Leading and Trailing Underscore “__var__”: Indicates special methods defined by the Python language. Avoid this naming scheme for your own attributes.
+• Single Underscore “_”: Sometimes used as a name for temporary or insignificant variables (“don’t care”). Also, it represents the result of the last expression in a Python REPL session.
