@@ -29,3 +29,12 @@ and meant as a hint to the programmer only.
 • Double Leading Underscore “__var”: Triggers name mangling when used in a class context. Enforced by the Python interpreter.
 • Double Leading and Trailing Underscore “__var__”: Indicates special methods defined by the Python language. Avoid this naming scheme for your own attributes.
 • Single Underscore “_”: Sometimes used as a name for temporary or insignificant variables (“don’t care”). Also, it represents the result of the last expression in a Python REPL session.
+
+[2.5] - Key Takeaways : A Shocking Truth About String Formatting
+• Perhaps surprisingly, there’s more than one way to handle string formatting in Python.
+• Each method has its individual pros and cons. Your use case will influence which method you should use.
+• If you’re having trouble deciding which string formatting method to use, try my String Formatting Rule of Thumb.
+  Dan’s Python String Formatting Rule of Thumb:
+  -If your format strings are user-supplied, use Template
+  -Strings to avoid security issues. Otherwise, use Literal
+  -String Interpolation if you’re on Python 3.6+, and “New Style” String Formatting if you’re not.
