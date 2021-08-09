@@ -4,7 +4,6 @@ Reference :
   - [Python Tricks]: Bader, Dan, ed. (2017) Python Tricks: The Book — A Buffet of Awesome Python Features. 1st ed. Warsaw: Amazon
 
 
-
 Chapter 2 :
 
 [2.1] - Key Takeaways : Covering Your A** With Assertions
