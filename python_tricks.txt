@@ -5,7 +5,7 @@ Reference :
 
 
 
-Chapter 1 :
+Chapter 2 :
 
 [2.1] - Key Takeaways : Covering Your A** With Assertions
 • Python’s assert statement is a debugging aid that tests a condition as an internal self-check in your program.
@@ -39,3 +39,11 @@ and meant as a hint to the programmer only.
   -If your format strings are user-supplied, use Template
   -Strings to avoid security issues. Otherwise, use Literal
   -String Interpolation if you’re on Python 3.6+, and “New Style” String Formatting if you’re not.
+
+Chapter 3 :
+
+[3.1] - Key Takeaways : Python’s Functions Are First-Class
+• Everything in Python is an object, including functions. You can assign them to variables, store them in data structures, and pass or return them to and from other functions (first-class functions.)
+• First-class functions allow you to abstract away and pass around behavior in your programs.
+• Functions can be nested and they can capture and carry some of the parent function’s state with them. Functions that do this are called closures.
+• Objects can be made callable. In many cases this allows you to treat them like functions.
