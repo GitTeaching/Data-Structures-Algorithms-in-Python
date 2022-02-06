@@ -2,7 +2,6 @@
 
 DSA in Python learning path - Implementing Data Structures and Algorithms in Python.
 
-
 #### 1- Recursion & Recursive functions
 
 #### 2- Algorithm analysis and complexity
