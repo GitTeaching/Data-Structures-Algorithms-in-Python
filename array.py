@@ -41,7 +41,7 @@ print(arr)
 
 print(arr.get(0))
 
-# arr.pop()
+arr.pop()
 print(arr)
 
 arr.delete(2)
