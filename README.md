@@ -18,7 +18,6 @@ DSA in Python learning path - Implementing Data Structures and Algorithms in Pyt
  - Priority Queues
  - Graphs
 
-
 #### 4- Algorithms: Sorting, Searching, etc.
  - Tower of Hanoi
  - Bubble Sort
