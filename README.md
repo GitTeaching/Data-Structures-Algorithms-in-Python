@@ -33,6 +33,7 @@ DSA in Python learning path - Implementing Data Structures and Algorithms in Pyt
  - Heap Sort
  - Linear Search (Iterative and Recursive)
  - Binary Search 
+ - Backtracking
  
 #### 5- Greedy Algorithms
 
