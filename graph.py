@@ -52,5 +52,5 @@ g.show_connections()
 
 g.add_edge('7', '0')
 g.add_edge('0', '8')
-g.add_edge('9', '10')
+g.add_edge('9', '11')
 g.show_connections()
