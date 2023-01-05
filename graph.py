@@ -47,7 +47,7 @@ g.add_edge('6', '5')
 
 g.show_connections()
 
-g.add_vertex('6')
+g.add_vertex('5')
 g.show_connections()
 
 g.add_edge('7', '0')
