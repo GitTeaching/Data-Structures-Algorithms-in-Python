@@ -25,7 +25,6 @@ class Graph:
             #print(f"{vertex} --> {neighbors}")
             print(f"{vertex} --> {' '.join(neighbors)}")
 
-
 g = Graph()
 
 g.add_vertex('0')
