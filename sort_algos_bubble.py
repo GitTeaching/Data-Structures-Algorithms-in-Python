@@ -36,7 +36,7 @@ def bubble_sort_optimized(nums):
                 
                 
 # Bubble sort algorithm testing
-lst = [64, 34, 25, 12, 22, 11, 90, 0]
+lst = [64, 34, 25, 12, 22, 11, 90, 1]
 bubble_sort(lst)
 print(lst)
 
