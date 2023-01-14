@@ -25,6 +25,7 @@ DSA in Python learning path - Implementing Data Structures and Algorithms in Pyt
  - Insertion Sort
  - Merge Sort
  - Quick Sort
+ - Tim Sort
  - Shell Sort
  - Counting Sort
  - Radix Sort
