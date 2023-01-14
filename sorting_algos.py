@@ -55,6 +55,24 @@ def merge_sort(arr):
 
     return merge(merge_sort(left), merge_sort(right))
 
+# Quick sort - extra space : O(n log n) / O(n^2) if bad pivot choice
+from random import randint
+
+def quick_sort(arr):
+    if len(arr) < 2:
+        return arr  
+    low, high, same = [], [], []
+    pivot = arr[randint(0, len(arr) - 1)]
+    for item in arr:
+        if item < pivot:
+            low.append(item)
+        elif item > pivot:
+            high.append(item)
+        elif item == pivot:
+            same.append(item)
+        
+    return quick_sort(low) + same + quick_sort(high)
+
 
 # Tests
 print(bubble_sort(([99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0])))
@@ -64,3 +82,5 @@ print(selection_sort(([99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0])))
 print(insertion_sort(([99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0])))
 
 print(merge_sort(([99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0])))
+
+print(quick_sort(([99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0])))
