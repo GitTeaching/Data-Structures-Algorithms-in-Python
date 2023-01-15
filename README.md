@@ -19,7 +19,6 @@ DSA in Python learning path - Implementing Data Structures and Algorithms in Pyt
  - Graphs
 
 #### 4- Algorithms: Sorting, Searching, etc.
- - Tower of Hanoi
  - Bubble Sort
  - Selection Sort
  - Insertion Sort
@@ -34,6 +33,7 @@ DSA in Python learning path - Implementing Data Structures and Algorithms in Pyt
  - Linear Search (Iterative and Recursive)
  - Binary Search 
  - Backtracking
+ - Tower of Hanoi
  
 #### 5- Greedy Algorithms
 
