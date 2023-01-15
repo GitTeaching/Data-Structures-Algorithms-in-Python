@@ -1,5 +1,5 @@
 
-# Bubble sort : O(n^2)
+# Bubble sort : O(n^2) -----------------------------------------------------
 def bubble_sort(arr):
     for i in range(len(arr)):
         for j in range(len(arr)-1):
@@ -8,7 +8,7 @@ def bubble_sort(arr):
     return arr
 
 
-# Selection sort : O(n^2)
+# Selection sort : O(n^2) --------------------------------------------------
 def selection_sort(arr):
     for i in range(len(arr)):
         min = i
@@ -19,7 +19,7 @@ def selection_sort(arr):
     return arr
 
 
-# Insertion sort : O(n^2)
+# Insertion sort : O(n^2) -------------------------------------------------------
 def insertion_sort(arr):
     for i in range(len(arr)):
         ins = arr[i]
@@ -31,7 +31,7 @@ def insertion_sort(arr):
     return arr
 
 
-# Merge sort : O(n log n)
+# Merge sort : O(n log n) -----------------------------------------------------
 def merge(left, right):
     res = []
     leftindex = 0
@@ -55,7 +55,7 @@ def merge_sort(arr):
 
     return merge(merge_sort(left), merge_sort(right))
 
-# Quick sort - extra space : O(n log n) / O(n^2) if bad pivot choice
+# Quick sort - extra space : O(n log n) / O(n^2) if bad pivot choice ------------
 from random import randint
 
 def quick_sort(arr):
@@ -74,7 +74,45 @@ def quick_sort(arr):
     return quick_sort(low) + same + quick_sort(high)
 
 
-# Tests
+# Tim Sort - O(n log n) ----------------------------------------------------------
+def insertion_tim_sort(arr, start, end):
+    for i in range(start+1, end+1):
+        ins = arr[i]
+        j = i - 1
+        while j>=start and ins < arr[j]:
+            arr[j+1] = arr[j]
+            j -= 1
+        arr[j+1] = ins
+    return arr
+
+def tim_sort(arr):
+    # A chosen run size
+    min_run_size = 3
+
+    # Phase 1 - Sort each run with insertion sort
+    for start in range(0, len(arr), min_run_size):
+        end = min((start + min_run_size - 1), (len(arr) - 1))
+        insertion_tim_sort(arr, start, end)
+
+    # Phase 2 - Merge the sorted runs using merge sort
+    size = min_run_size
+    while size < len(arr):
+        for start in range(0, len(arr), min_run_size * 2):
+            mid = start + size - 1
+            end = min((start + 2*size - 1), len(arr) - 1)
+
+            left = arr[start : mid+1]
+            right = arr[mid+1 : end+1]
+            merged_arr = merge(left, right)
+
+            arr[start : start+len(merged_arr)] = merged_arr
+        
+        size *= 2
+    
+    return arr
+
+
+# Tests -------------------------------------------------------------------------
 print(bubble_sort(([99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0])))
 
 print(selection_sort(([99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0])))
@@ -84,3 +122,5 @@ print(insertion_sort(([99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0])))
 print(merge_sort(([99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0])))
 
 print(quick_sort(([99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0])))
+
+print(tim_sort(([99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0])))
