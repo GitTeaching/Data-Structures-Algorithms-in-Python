@@ -107,7 +107,20 @@ class BinarySearchTree:
                     
                     return True            
                 
-        return False        
+        return False       
+
+    def bfs_traversal(self):
+        res = [] 
+        queue = [self.root]
+        while queue :
+            curr_node = queue.pop(0)
+            res.append(curr_node.value)
+            if curr_node.left:
+                queue.append(curr_node.left)
+            if curr_node.right:
+                queue.append(curr_node.right)
+        
+        return res
 
 
 
@@ -117,10 +130,12 @@ print(my_bst.insert(4))
 print(my_bst.insert(6))
 print(my_bst.insert(1))
 print(my_bst.insert(20))
-print(my_bst.insert(15))
 print(my_bst.insert(170))
-print(my_bst.insert(3))
+print(my_bst.insert(15))
+print(my_bst.insert(1))
 print(my_bst.insert(8))
+
+print(my_bst.bfs_traversal())
 
 print(my_bst.root.value)
 print(my_bst.root.left.value, my_bst.root.right.value)
