@@ -6,10 +6,10 @@ class Node:
 
 
 class BinarySearchTree:
+
     def __init__(self):
         self.root = None
     
-
     def insert(self, value):
         new_node = Node(value)
         if self.root:
@@ -47,7 +47,6 @@ class BinarySearchTree:
 
         return False
     
-
     def remove(self, value):
         if self.root:     
             curr_node = self.root
@@ -121,7 +120,40 @@ class BinarySearchTree:
                 queue.append(curr_node.right)
         
         return res
+    
+    def bfs_traversal_recursive(self, res, queue):
+        if not queue :
+            return res
+        
+        curr_node = queue.pop(0)
+        res.append(curr_node.value)
+        if curr_node.left:
+            queue.append(curr_node.left)
+        if curr_node.right:
+            queue.append(curr_node.right)
+        
+        return self.bfs_traversal_recursive(res, queue)
+    
+    def dfs_traversal_preorder(self, res, curr_node):
+        if curr_node :
+            res.append(curr_node.value)
+            self.dfs_traversal_preorder(res, curr_node.left)
+            self.dfs_traversal_preorder(res, curr_node.right)
+        return res
 
+    def dfs_traversal_inorder(self, res, curr_node):
+        if curr_node :
+            self.dfs_traversal_inorder(res, curr_node.left)
+            res.append(curr_node.value)
+            self.dfs_traversal_inorder(res, curr_node.right)
+        return res
+
+    def dfs_traversal_postorder(self, res, curr_node):
+        if curr_node :
+            self.dfs_traversal_postorder(res, curr_node.left)
+            self.dfs_traversal_postorder(res, curr_node.right)
+            res.append(curr_node.value)
+        return res
 
 
 my_bst = BinarySearchTree()
@@ -132,10 +164,13 @@ print(my_bst.insert(1))
 print(my_bst.insert(20))
 print(my_bst.insert(170))
 print(my_bst.insert(15))
-print(my_bst.insert(1))
-print(my_bst.insert(8))
+#print(my_bst.insert(8))
 
 print(my_bst.bfs_traversal())
+print(my_bst.bfs_traversal_recursive([], [my_bst.root]))
+print(my_bst.dfs_traversal_preorder([], my_bst.root))
+print(my_bst.dfs_traversal_inorder([], my_bst.root))
+print(my_bst.dfs_traversal_postorder([], my_bst.root))
 
 print(my_bst.root.value)
 print(my_bst.root.left.value, my_bst.root.right.value)
