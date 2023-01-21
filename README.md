@@ -36,10 +36,10 @@ DSA in Python learning path - Implementing Data Structures and Algorithms in Pyt
  - Depth First Search
  - Backtracking
  - Tower of Hanoi
- 
-#### 5- Greedy Algorithms
 
-#### 6- Dynamic Programming
+#### 5- Dynamic Programming
+
+#### 6- Greedy Algorithms
 
 #### 7- Other Algorithms
 
