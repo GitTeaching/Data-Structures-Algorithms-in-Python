@@ -32,7 +32,7 @@ DSA in Python learning path - Implementing Data Structures and Algorithms in Pyt
  - Heap Sort
  - Linear Search (Iterative and Recursive)
  - Binary Search 
- - Breadth First Search
+ - Breadth First Search - BFS
  - Depth First Search
  - Backtracking
  - Tower of Hanoi
