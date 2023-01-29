@@ -37,7 +37,7 @@ DSA in Python learning path - Implementing Data Structures and Algorithms in Pyt
  - Backtracking
  - Tower of Hanoi
 
-#### 5- Dynamic Programming
+#### 5- Dynamic Programming & Memoization
 
 #### 6- Bit Manipulation
 
