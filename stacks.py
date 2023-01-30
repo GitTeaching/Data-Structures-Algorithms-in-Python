@@ -68,7 +68,7 @@ def main():
 	stack = ListStack()
 	stack.push(1)
 	stack.push(4)
-	stack.push(3)
+	stack.push(2)
 	print("Length : %i" %(len(stack)))
 	stack.pop()
 	print("Length : %i" %(len(stack)))
