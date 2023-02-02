@@ -67,8 +67,8 @@ def main():
 	# create a stack - list usage storage
 	stack = ListStack()
 	stack.push(1)
-	stack.push(5)
-	stack.push(2)
+	stack.push(4)
+	stack.push(3)
 	print("Length : %i" %(len(stack)))
 	stack.pop()
 	print("Length : %i" %(len(stack)))
