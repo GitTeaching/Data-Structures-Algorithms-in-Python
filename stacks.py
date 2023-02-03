@@ -1,5 +1,5 @@
 class ListStack:
-	"""LIFO Stack implementation using a Python list as underlying storage"""
+	"""LIFO Stack implementation using Python list as underlying storage"""
 	def __init__(self):
 		self.stack = []
 
