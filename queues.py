@@ -36,12 +36,7 @@ class ListQueue:
 		self.queue[tail] = data
 		self.size += 1
 
-	def resize(self, capacity):
 		
-
-
-
-
 
 # definition for an Empty exception class.
 class Empty(Exception):
