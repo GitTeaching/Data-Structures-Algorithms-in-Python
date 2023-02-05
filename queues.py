@@ -1,6 +1,6 @@
 DEFAULT_CAPACITY = 10
 
-# Using an Array(py list) Circularly 
+# Using an Array(python list) Circularly 
 class ListQueue:
 	def __init__(self):
 		self.queue = [None]*DEFAULT_CAPACITY
