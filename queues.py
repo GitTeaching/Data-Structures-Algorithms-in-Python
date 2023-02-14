@@ -22,7 +22,7 @@ class ListQueue:
 
 	def dequeue(self):
 		if self.is_empty():
-			raise Empty("Queue is empty, can't dequeue")
+			raise Empty("Queue is empty, can't dequeue.")
 		deq_element = self.queue[self.front_ind]
 		self.queue[self.front_ind] = None
 		self.front_ind = (self.front_ind + 1) % len(self.queue)
